@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
+# Source0-md5:	df737598c616286d71e904a9f9c01f4b
 URL:		http://www.chez.com/soap/wmciv/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
