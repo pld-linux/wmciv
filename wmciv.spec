@@ -42,7 +42,7 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README CHANGELOG 
+gzip -9nf README CHANGELOG
 
 %clean
 rm -rf $RPM_BUILD_ROOT
