@@ -4,9 +4,10 @@ Name:		wmciv
 Version:	0.2
 Release:	1
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Copyright:	GPL
-Source:		http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
+License:	GPL
+Source0:	http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
 URL:		http://www.chez.com/soap/wmciv/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -14,29 +15,28 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix 	/usr/X11R6
 
 %description
-wmciv is a dock-application designed for Window Maker. It allows you to
-easily launch a Freeciv game. Any relatively recent version of Freeciv 
-should	be supported.
+wmciv is a dock-application designed for Window Maker. It allows you
+to easily launch a Freeciv game. Any relatively recent version of
+Freeciv should be supported.
 
-After installing this package you have to create a directory named .wmciv 
-in your home directory and copy in it the files contained in 
+After installing this package you have to create a directory named
+.wmciv in your home directory and copy in it the files contained in
 %{_defaultdocdir}/%{name}-%{version}/scripts/.
 
 %description -l pl
 wmciv jest dokowalnym apletem zaprojektowanym dla Window Makera.
-Pozwala Ci na ³atwe uruchamianie gry Freeciv. Powinien wspó³pracowaæ 
-z ka¿d±, w miarê now±, wersj± Freeciv.
+Pozwala Ci na ³atwe uruchamianie gry Freeciv. Powinien wspó³pracowaæ z
+ka¿d±, w miarê now±, wersj± Freeciv.
 
-Po zainstalowaniu tego pakietu musisz stworzyæ katalog .wmciv 
-w swoim katalogu domowym i skopiowaæ do niego pliki znajduj±ce siê
-w %{_defaultdocdir}/%{name}-%{version}/scripts/.
+Po zainstalowaniu tego pakietu musisz stworzyæ katalog .wmciv w swoim
+katalogu domowym i skopiowaæ do niego pliki znajduj±ce siê w
+%{_defaultdocdir}/%{name}-%{version}/scripts/.
 
 %prep
 %setup -q
 
 %build
-
-%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/X11R6/include"
+%{__make} CFLAGS="%{rpmcflags} -Wall -I%{_includedir}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
