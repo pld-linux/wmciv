@@ -10,7 +10,6 @@ URL:		http://www.chez.com/soap/wmciv/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix 	/usr/X11R6
 
 %description
 wmciv is a dock-application designed for Window Maker. It allows you
