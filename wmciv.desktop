@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=wmciv
+Comment=Freeciv luncher
+Comment[pl]=Odpalacz Freeciva
+Exec=wmciv
+Terminal=false
+Type=Application
+Categories=Applet;
+NotShowIn=GNOME;KDE;
+# vi: encoding=utf-8
