@@ -5,8 +5,6 @@ Version:	0.2
 Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
 URL:		http://www.chez.com/soap/wmciv/
 BuildRequires:	XFree86-devel
