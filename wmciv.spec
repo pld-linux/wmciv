@@ -37,13 +37,13 @@ w %{_defaultdocdir}/%{name}-%{version}/scripts/.
 
 %build
 
-make CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/X11R6/include"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -I/usr/X11R6/include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-make install DESTDIR=$RPM_BUILD_ROOT%{_bindir}
+%{__make} install DESTDIR=$RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf README CHANGELOG 
 
