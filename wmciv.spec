@@ -9,7 +9,6 @@ Copyright:	GPL
 Source:		http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
 URL:		http://www.chez.com/soap/wmciv/
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix 	/usr/X11R6
