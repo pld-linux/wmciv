@@ -42,13 +42,11 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README CHANGELOG
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz scripts
+%doc README CHANGELOG scripts
 
 %attr(755,root,root) %{_bindir}/wmciv
