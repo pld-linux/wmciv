@@ -43,7 +43,8 @@ katalogu domowym i skopiowaæ do niego pliki znajduj±ce siê w
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/docklets}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT%{_bindir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
