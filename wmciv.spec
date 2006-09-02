@@ -20,7 +20,7 @@ Freeciv should be supported.
 
 After installing this package you have to create a directory named
 .wmciv in your home directory and copy in it the files contained in
-%{_defaultdocdir}/%{name}-%{version}/scripts/.
+%{_docdir}/%{name}-%{version}/scripts/.
 
 %description -l pl
 wmciv jest dokowalnym apletem zaprojektowanym dla Window Makera.
@@ -29,7 +29,7 @@ ka¿d±, w miarê now±, wersj± Freeciv.
 
 Po zainstalowaniu tego pakietu musisz stworzyæ katalog .wmciv w swoim
 katalogu domowym i skopiowaæ do niego pliki znajduj±ce siê w
-%{_defaultdocdir}/%{name}-%{version}/scripts/.
+%{_docdir}/%{name}-%{version}/scripts/.
 
 %prep
 %setup -q
