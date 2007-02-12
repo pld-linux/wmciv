@@ -1,5 +1,5 @@
 Summary:	Freeciv launcher for Window Maker Dock
-Summary(pl.UTF-8):   Odpalacz Freeciva dla Doku Window Makera
+Summary(pl.UTF-8):	Odpalacz Freeciva dla Doku Window Makera
 Name:		wmciv
 Version:	0.2
 Release:	5
