@@ -1,5 +1,5 @@
 Summary:	Freeciv launcher for Window Maker Dock
-Summary(pl):	Odpalacz Freeciva dla Doku Window Makera
+Summary(pl.UTF-8):   Odpalacz Freeciva dla Doku Window Makera
 Name:		wmciv
 Version:	0.2
 Release:	5
@@ -22,13 +22,13 @@ After installing this package you have to create a directory named
 .wmciv in your home directory and copy in it the files contained in
 %{_docdir}/%{name}-%{version}/scripts/.
 
-%description -l pl
+%description -l pl.UTF-8
 wmciv jest dokowalnym apletem zaprojektowanym dla Window Makera.
-Pozwala Ci na ³atwe uruchamianie gry Freeciv. Powinien wspó³pracowaæ z
-ka¿d±, w miarê now±, wersj± Freeciv.
+Pozwala Ci na Å‚atwe uruchamianie gry Freeciv. Powinien wspÃ³Å‚pracowaÄ‡ z
+kaÅ¼dÄ…, w miarÄ™ nowÄ…, wersjÄ… Freeciv.
 
-Po zainstalowaniu tego pakietu musisz stworzyæ katalog .wmciv w swoim
-katalogu domowym i skopiowaæ do niego pliki znajduj±ce siê w
+Po zainstalowaniu tego pakietu musisz stworzyÄ‡ katalog .wmciv w swoim
+katalogu domowym i skopiowaÄ‡ do niego pliki znajdujÄ…ce siÄ™ w
 %{_docdir}/%{name}-%{version}/scripts/.
 
 %prep
