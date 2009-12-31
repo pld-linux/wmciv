@@ -2,14 +2,15 @@ Summary:	Freeciv launcher for Window Maker Dock
 Summary(pl.UTF-8):	Odpalacz Freeciva dla Doku Window Makera
 Name:		wmciv
 Version:	0.2
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.chez.com/soap/wmciv/%{name}-%{version}.tar.gz
 # Source0-md5:	df737598c616286d71e904a9f9c01f4b
 Source1:	%{name}.desktop
 URL:		http://www.chez.com/soap/wmciv/wmciv.html
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
@@ -37,7 +38,7 @@ katalogu domowym i skopiować do niego pliki znajdujące się w
 %build
 %{__make} \
 	CFLAGS="%{rpmcflags} -Wall -I%{_includedir}" \
-	LIBDIR="-L/usr/X11R6/%{_lib}"
+	LIBDIR="-L/usr/%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
